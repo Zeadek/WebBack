@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+</head>
+<body>
+<h1>Задание 2</h1>
+<div>
+    h2 С помощью программы PuTTY подключаемся к серверу, с помощью команды telnet 192.168.199.8 80 получаем удаленный доступ к серверу.
+    <img src = 'pictures/webebeb_putty.png'>
+</div>
+<div>
+    C помощью метода GET получаем страницы в протоколах HTTP 1.0 и HTTP 1.1.
+    <img src = 'pictures/webebeb1.png'>
+</div>
+<div>
+    С помощью filezilla загружаем необходимые файлы. Далее при помощи метода HEAD определить размер файла file.tar.gz;
+      <img src = 'pictures/webebeb2.png'>
+    Строка Content-Length отвечает за размер файла в байтах.
+</div>
+<div>
+    При помощи метода HEAD определяем медиатип ресурса image.png
+     <img src = 'pictures/webebeb3.png'>
+    медиатип указан в поле Content-Type
+</div>
+<div>
+    Методом POST отправляем комментарий на сервер по адресу /index.php
+    <img src = 'pictures/webebeb4.png'>
+</div>
+<div>
+    Если нужно получить только определенное количество байт файла методом GET используем заголовок Range
+    <img src = 'pictures/webebeb5.png'>
+</div>
+<div>
+    Определить кодировку ресурса /index.php при помощи метода HEAD
+    <img src = 'pictures/webebeb6.png'>
+</div>
+</body>
+</html>
+
+<style>
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        max-width: min-content;
+    }
+</style>

@@ -1,78 +1,12 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="UTF-8">
+    <title>Выбор заданий</title>
 </head>
 <body>
-<h1>Задание 1</h1>
-    <h2>Подключение к учебному серверу по SSH с помощью клиента Putty</h2>
-    <div>
-        Устанавливаем программу PuTTY, вводим адрес сервера(kubsu-dev.ru), порт(58528), логинимся
-        <img src="pictures/webeb3.png" alt="Скриншот FileZilla">
-    </div>
-
-<ol>
-    <li>ping kubsu.ru</li>
-    Команда ping позволяет отправить серию небольших пакетов данных на указанное устройство и показать время ответа
-    Она используется для устранения неполадок подключения.
-    <li>nslookup A-записи kubsu.ru</li>
-    nslookup — это инструмент сетевого администрирования для запроса cистемы доменных имён.
-    На скриншоте отображен полученный адрес kubsu.ru
-    <li>nslookup A-записи kubsu-dev.ru</li>
-    На скриншоте отображен полученный адрес kubsu-dev.ru
-    <li>nslookup MX-записи kubsu.ru</li>
-    MX-запись (Mail exchange) — это запись, которая отвечает за сервер, через который будет работать почта
-    На скриншоте отображены полученный адреса почт kubsu.ru
-    <li>nslookup MX-записи kubsu-dev.ru</li>
-    На скриншоте отображено, что у kubsu-dev.ru нет серверов, отвечающих за почту
-    <li>whois kubsu.ru</li>
-    whois — это команда для получения информации о доменах или IP-адресах
-    На скриншоте отображены полученные дата регистрации домена kubsu.ru, данные владельца, днс-сервера
-    <li>whois kubsu-dev.ru</li>
-        На скриншоте отображены полученные дата регистрации домена kubsu-dev.ru, данные владельца, днс-сервера
-</ol>
-    <img src="pictures/webeb1.png" alt="Это должен был быть скриншот">
-  <script src="js/app.js"></script>
-    <div>
-        <h2>
-            Клонирование репозитория
-        </h2>
-        <div>
-        Переходим в директорию www при помощи команды cd, туда клонируем репозиторий из github
-        <img src="pictures/webeb4.png" alt="Скриншот клонирования гитхаба">
-    </div>
-    </div>
-<div>
-    <h2>Скачивание файлов с удаленного сервера при помощи FileZilla</h2>
-    <div>
-        С помощью программы FileZilla соединяемся с
-учебным сервером по протоколу SFTP и копируем на
-локальный компьютер файлы задания из каталога www
-        <img src="pictures/webeb2.png" alt="Скриншот FileZilla">
-    </div>
-</div>
-    <div>
-        <h2>Добавление изменений на git и на сайт</h2>
-        <div>
-            Обновляем репозиторий на github, далее подключаемся к учебному серверу по SSH с помощью клиента Putty, переходим в директорию репозитория(cd www/WebBack), и обновляем при помощи команды git pull
-            <img src="pictures/webeb5.png" alt="Скриншот git pull">
-        </div>
-    </div>
+<a href="ex1/index.html"><strong>ЗАДАНИЕ 1</strong></a><br>
+<a href="ex2/index.html"><strong>ЗАДАНИЕ 2</strong></a><br>
+<a href="ex3/index.html"><strong>ЗАДАНИЕ 3</strong></a>
 </body>
 </html>
