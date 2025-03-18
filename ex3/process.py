@@ -1,4 +1,3 @@
-import cgi
 import html
 import mysql.connector
 import os
@@ -8,7 +7,6 @@ MAX_FIO_LENGTH = 150
 ALLOWED_LANGUAGES = ["Pascal", "C", "C++", "JavaScript", "PHP", "Python", "Java", "Haskell", "Clojure", "Prolog", "Scala", "Go"]
 ALLOWED_GENDERS = ["male", "female", "other"]
 
-# Настройки БД (замени!)
 DB_HOST = "localhost"
 DB_USER = "u68875"
 DB_PASSWORD = "1698296"
