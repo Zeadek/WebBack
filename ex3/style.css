@@ -1,1 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #232526 0%, #3a6186 100%);
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+}
+
+form#Form {
+    padding: 36px 32px 30px 32px;
+    margin: 48px auto 0 auto;
+    max-width: 420px;
+    background: rgba(255,255,255,0.90);
+    border-radius: 18px;
+    box-shadow: 0 6px 32px 0 rgba(60,70,130,0.14), 0 1.5px 8px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    backdrop-filter: blur(1.5px);
+}
+
+form#Form input[type="text"],
+form#Form input[type="email"],
+form#Form input[type="tel"],
+form#Form input[type="date"],
+form#Form textarea,
+form#Form select {
+    width: 100%;
+    padding: 13px 16px;
+    font-size: 1.04rem;
+    border: 1.5px solid #aeb6cf;
+    border-radius: 7px;
+    background: #f7f9fa;
+    margin-top: 7px;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+    transition: border 0.2s, box-shadow 0.2s;
+    color: #24305e;
+}
+
+form#Form input:focus,
+form#Form textarea:focus,
+form#Form select:focus {
+    border: 1.5px solid #4e54c8;
+    outline: none;
+    background: #f0f4ff;
+    box-shadow: 0 2px 8px rgba(78,84,200,0.07);
+}
+
+form#Form label {
+    font-size: 1rem;
+    color: #24305e;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+form#Form select {
+    min-height: 65px;
+    background: #f7f9fa;
+}
+
+form#Form textarea {
+    min-height: 90px;
+    resize: vertical;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#gend {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+#gend a {
+    color: #24305e;
+    font-size: 1rem;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+#gend input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 3px;
+    accent-color: #4e54c8;
+    cursor: pointer;
+}
+
+#contract_lbl {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #24305e;
+    gap: 9px;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+form#Form button[type="submit"] {
+    margin-top: 14px;
+    padding: 12px 0;
+    background: linear-gradient(90deg, #4e54c8 10%, #8f94fb 90%);
+    color: #fff;
+    font-size: 1.13rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 12px rgba(78, 84, 200, 0.17);
+    transition: background 0.18s, box-shadow 0.18s, transform 0.13s;
+}
+
+form#Form button[type="submit"]:hover {
+    background: linear-gradient(90deg, #505acc 10%, #a2a4fd 90%);
+    box-shadow: 0 6px 18px rgba(78, 84, 200, 0.23);
+    transform: translateY(-2px) scale(1.03);
+}
+
+option {
+    padding: 4px 8px;
+    color: #24305e;
+    background: #f7f9fa;
+}
+
+option:checked {
+    background: #8f94fb;
+    color: #fff;
+}
+
+.status-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 0 0 0;
+    pointer-events: none;
+}
+
+.notification {
+    min-width: 320px;
+    max-width: 90vw;
+    box-sizing: border-box;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 1.09rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 18px rgba(40, 40, 80, 0.18);
+    opacity: 0;
+    background: #f7f9fa;
+    color: #24305e;
+    pointer-events: auto;
+    transition: opacity 0.5s, top 0.5s;
+}
+
+.notification img {
+    width: 24px;
+    height: 24px;
+}
+
+.notification.error {
+    background: #ffeaea;
+    color: #d82d2d;
+    border: 1.7px solid #f8b4b4;
+}
+
+.notification.warning {
+    background: #fffbe5;
+    color: #be8f10;
+    border: 1.7px solid #ffe082;
+}
+
+.notification.success {
+    background: #eaffea;
+    color: #269d3c;
+    border: 1.7px solid #b7f7c7;
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+.notification.hide {
+    opacity: 0;
+}

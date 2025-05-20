@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Задание 3</h1>
+
+            <div class="point">
+                <p class="point-description">
+                    Подключившись к базе данных MySQL -u<Логин> -p<Пароль> <Имя базы данных> , с помощью команды <code>CREATE TABLE <имя таблицы></code> создал таблицу, содержащую информацию о заявке: ФИО, телефон, email, дата рождения, пол, биография — с первичным ключом ID заявки:
+                </p>
+
+                <img src="img/1.png" alt="" class="point-image">
+            </div>
+
+            <div class="point">
+                <p class="point-description">
+                    Информацию о доступных языках программирования вынес в отдельную таблицу, где первычным ключом выступает ID языка:
+                </p>
+
+                <img src="img/2.png" alt="" class="point-image">
+            </div>
+
+            <div class="point">
+                <p class="point-description">
+                    Выбранные в качестве любимых языки программирования также были выделены в отдельную таблицу, с двумя единственными атрибутами — внешними ключами ID заявки и ID языка:
+                </p>
+
+                <img src="img/3.png" alt="" class="point-image">
+            </div>
+
+            <div class="point">
+                <p class="point-description">
+                    С помощью команды <code>INSERT INTO <имя таблицы>(<атрибут 1>,<атрибут 2>, ...) VALUES (<значение 1>, <значение 2>, ...)</code> добавил первую запись в таблицу ProgLang:
+                </p>
+            </div>
+
+            <div class="point">
+                <p class="point-description">
+                    Аналогично добавил еще 11 языков в таблицу. Информацию обо всех записях таблицы можно получить с помощью запроса <code>SELECT * FROM <имя таблицы></code>. Теперь таблица имеет вид:
+                </p>
+
+                <img src="img/4.png" alt="" class="point-image">
+            </div>
+
+            <div class="point">
+                <p class="point-description">Настройка БД MySQL завершена. Передать в нее данные можно, например, с помощью формы <a href="http://u68875.kubsu-dev.ru/WebBack/ex3/submit.cgi"> по ссылке</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
