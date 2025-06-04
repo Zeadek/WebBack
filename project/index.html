@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Задание 5</title>
+    <link rel="icon" href="pic/logo.png">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="pic/logo.png" class="rounded img-fluid" alt="pic" loading="lazy" width="80"></a>
+        <p class="navbar-brand text-wrap m-0 col-4">Добро пожаловать!</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ms-auto">
+                    <a class="nav-link active" aria-current="page" href="authorization.html">Войти</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link" href="#">Менее главная</a>
+                </li>
+                <li class="nav-item dropdown ms-auto">
+                    <p class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Меню ссылок</p>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ссылка меню1</a></li>
+                        <li><a class="dropdown-item" href="#">Ссылка меню2</a></li>
+                        <li><a class="dropdown-item" href="#">Ссылка меню3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="mx-auto col-md-8 " style="display: flex; flex-direction: column;">
+
+    <div class="tble container text-center order-md-3 border border-secondary border-4 p-0 mb-3 rounded">
+     <table class="table table-hover m-0" id="tabl">
+            <thead>
+            <tr>
+                <th>Заг1</th>
+                <th>Заг2</th>
+                <th>Заг3</th>
+                <th>Заг4</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="2">ДД1</td>
+
+                <td rowspan="6">Д1Д</td>
+                <td>Д14</td>
+            </tr>
+            <tr>
+                <td>Д21</td>
+                <td>Д22</td>
+                <td>Д24</td>
+            </tr>
+            <tr>
+                <td>Д31</td>
+                <td>Д32</td>
+                <td>Д34</td>
+            </tr>
+            <tr>
+                <td>Д41</td>
+                <td>Д42</td>
+                <td>Д44</td>
+            </tr>
+            <tr>
+                <td>Д51</td>
+                <td>Д52</td>
+                <td>Д54</td>
+            </tr>
+            <tr>
+                <td>Д61</td>
+                <td>Д62</td>
+                <td>Д64</td>
+            </tr>
+      </tbody>
+    </table>
+</div>
+
+    <div class="container order-md-2 p-0">
+<h2 class="content" id="page_top"><strong>Задание 1 </strong></h2>
+<ul class="content order-md-1" id="silka" >
+    <li><a href="http://kubsu.ru"> КубГУ(абсолютная гиперссылка)</a></li>
+    <li><a href="https://kubsu.ru"> КубГУ(гиперссылка с протоколом https)</a></li>
+    <li><a href="https://kubsu.ru">
+        <img src="pic/image.jpg" alt="Картинка" width="100" height="100"> </a></li>
+    <li><a href="vnutri.html"> Сокращенная ссылка на внутреннюю страницу </a></li>
+    <li><a href="index.html">Сокращенная ссылка на главную страницу </a></li>
+    <li><a href="#page_top">Ссылка на фрагмент текущей страницы </a></li>
+    <li><a href="index.html?p1=1&p2=2&p3=3" id="id_test" title="Пример">Ссылка с 3 параметрами в url  </a></li>
+    <li><a href="index.html/id=1">Ссылка с параметром id в URL</a></li>
+    <li><a href="vnutri.html"> Ссылка на страницу в текущем каталоге </a></li>
+    <li><a href="about/about.html"> Ссылка на страницу в каталоге about </a></li>
+    <li><a href="../upper.html"> Ссылка на страницу в каталоге уровнем выше</a></li>
+    <li><a href="../../upper2.html"> Ссылка на страницу в каталоге 2 уровнями выше</a></li>
+    <li>Текс текст текст <a href ="index.html"> текст</a> текст текст текст текст</li>
+    <li><a href = "https://ru.wikipedia.org/wiki/Гиперссылка#Гиперссылка_на_другую_HTML-страницу">Ссылка на фрагмент страницы строннего сайта</a> </li>
+     <li>
+            <map name="map">
+                <area shape="rect" coords="60,30,80,130" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" alt="Прямоугольник">
+                <area shape="circle" coords="100,30, 16" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" alt="Круг">
+            </map>
+            <img usemap="#map" src="pic/map.jpg" alt="Картинка" style="height: 20%; width: 20%">
+        </li>
+    <li><a href=> Ссылка с пустым href</a></li>
+    <li><a> Ссылка без href</a></li>
+     <li><a href="index.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href="index.html" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+    <li><ol>
+            <li><a href="" title="Подпись">Ссылка с подписью</a></li>
+            <li><a href="" title="Другая подпись">Ссылка с другой подписью</a></li>
+        </ol></li>
+    <li><a href="ftp://username:password@ftp.example.com/document.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+     </ul>
+</div>
+
+    <div class="container order-md-1 p-0">
+<form id="feedbackForm" action="submit.cgi" method="post">
+    <input type="text" name="fio" placeholder="ФИО">
+    <input type="email" name="email" placeholder="Email">
+    <input type="tel" name="phone" placeholder="Телефон">
+    <label id="lang_lbl">Любимый язык программирования:
+            <select multiple="multiple" name = "langs">
+            <option value = 1>Pascal</option>
+            <option value = 2>C</option>
+            <option value = 3>C++</option>
+            <option value = 4>JavaScript</option>
+            <option value = 5>PHP</option>
+            <option value = 6>Python</option>
+            <option value = 7>Java</option>
+            <option value = 8>Haskel</option>
+            <option value = 9>Clojure</option>
+            <option value = 10>Prolog</option>
+            <option value = 11>Scala</option>
+            <option value = 12>Go</option>
+            </select>
+    </label>
+        <input type="date" name="date" id = "date" placeholder="Дата рождения">
+        <div id = "gend">
+            <a>Пол:</a>
+            <input type = "radio" name="gender" id="gender" value="male" checked>М
+            <input type="radio" name="gender" value="female">Ж
+        </div>
+    <textarea name="message" placeholder="Биография"></textarea>
+    <br>
+    <label id="contract_lbl">
+        <input type="checkbox" id="contract" name="policy"> С контрактом ознакомлен
+    </label>
+    <br>
+    <button type="submit">Отправить</button>
+    </form>
+  </div>
+
+    <div class="container mt-2 order-md-5">
+    <h3 class="text-center mb-4">Калькулятор стоимости заказа</h3>
+
+    <div class="form-group">
+      <label for="quantity">Количество:</label>
+      <input type="number" class="form-control" id="quantity" min="1" value="1">
+    </div>
+
+    <div class="form-group">
+      <label for="serviceType">Тип услуги:</label>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="serviceType1" name="serviceType" value="100" checked>
+        <label class="form-check-label" for="serviceType1">Услуга 1 (100 руб.)</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="serviceType2" name="serviceType" value="150">
+        <label class="form-check-label" for="serviceType2">Услуга 2 (150 руб.)</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="serviceType3" name="serviceType" value="200">
+        <label class="form-check-label" for="serviceType3">Услуга 3 (200 руб.)</label>
+      </div>
+        <div class="form-check">
+        <input type="radio" class="form-check-input" id="serviceType4" name="serviceType" value="250">
+        <label class="form-check-label" for="serviceType4">Услуга 4 (250 руб.)</label>
+      </div>
+    </div>
+
+    <div class="form-group" id="productOptions" style="display: none;">
+      <label for="productOption">Опция товара:</label>
+      <select class="form-control" id="productOption">
+        <option value="0">Без опций</option>
+        <option value="10">Опция 1 (+10 руб.)</option>
+        <option value="20">Опция 2 (+20 руб.)</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="productProperty" style="display: none;">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="productPropertyCheck" value="30">
+        <label class="form-check-label" for="productPropertyCheck">Свойство (+30 руб.)</label>
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <p id="result"></p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="image-slider swiper">
+  <div class="image-slider_wrapper swiper-wrapper">
+      <div class="swiper-slide image-slider_slide">
+          <div class="image-slider_image">
+              <img src="pic/pic1.png">
+          </div>
+      </div>
+      <div class="swiper-slide image-slider_slide">
+          <div class="image-slider_image">
+              <img src="pic/pic2.jpg">
+          </div>
+      </div>
+      <div class="swiper-slide image-slider_slide">
+          <div class="image-slider_image">
+              <img src="pic/pic3.jpg">
+          </div>
+      </div>
+      <div class="swiper-slide image-slider_slide">
+          <div class="image-slider_image">
+              <img src="pic/pic4.jpg">
+          </div>
+      </div>
+      <div class="swiper-slide image-slider_slide">
+          <div class="image-slider_image">
+              <img src="pic/pic5.jpg">
+          </div>
+      </div>
+      <div class="swiper-slide image-slider_slide">
+          <div class="image-slider_image">
+              <img src="pic/pic6.jpg">
+          </div>
+      </div>
+      <div class="swiper-slide image-slider_slide">
+          <div class="image-slider_image">
+              <img src="pic/pic7.jpg">
+          </div>
+      </div>
+      <div class="swiper-slide image-slider_slide">
+          <div class="image-slider_image">
+              <img src="pic/pic9.jpg">
+          </div>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+<footer>
+    <img id="low-logo" src="pic/logo.png">
+    <p id="bywho">Made by a sneaky chicken</p>  
+</footer>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+</body>
+
+</html>
